@@ -13,8 +13,8 @@ public class CustomUserDetailsService implements UserDetailsService{
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        if(username.equals("Sahil")){
-            return new User("Sahil", "Sahil1234", new ArrayList<>());
+        if(username.equals("Deepak")){
+            return new User("Deepak", "Deepak1234", new ArrayList<>());
         }
         else{
             throw new UsernameNotFoundException("User Doesn't exist!!");
